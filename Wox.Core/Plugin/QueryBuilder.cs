@@ -16,7 +16,7 @@ namespace Wox.Core.Plugin
                 return null;
             }
 
-            var rawQuery = string.Join(Query.TermSeperater, terms);
+            var rawQuery = text;
             string actionKeyword, search;
             string possibleActionKeyword = terms[0];
             List<string> actionParameters;
