@@ -41,7 +41,7 @@ namespace Wox.Plugin
         /// <summary>
         /// Query can be splited into multiple terms by whitespace
         /// </summary>
-        public const string TermSeperater = " ";
+        public const string TermSeperator = " ";
         /// <summary>
         /// User can set multiple action keywords seperated by ';'
         /// </summary>
@@ -67,7 +67,7 @@ namespace Wox.Plugin
             get
             {
                 var index = string.IsNullOrEmpty(ActionKeyword) ? 1 : 2;
-                return string.Join(TermSeperater, Terms.Skip(index).ToArray());
+                return string.Join(TermSeperator, Terms.Skip(index).ToArray());
             }
         }
 

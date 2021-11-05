@@ -22,7 +22,7 @@ namespace Wox.Plugin.PluginIndicator
                               IcoPath = metadata.IcoPath,
                               Action = c =>
                               {
-                                  context.API.ChangeQuery($"{keyword}{Plugin.Query.TermSeperater}");
+                                  context.API.ChangeQuery($"{keyword}{Plugin.Query.TermSeperator}");
                                   return false;
                               }
                           };

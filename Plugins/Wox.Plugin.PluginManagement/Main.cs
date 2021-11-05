@@ -93,7 +93,7 @@ namespace Wox.Plugin.PluginManagement
 
         private Result ResultForCommand(Query query, string command, string title, string subtitle)
         {
-            const string seperater = Plugin.Query.TermSeperater;
+            const string seperater = Plugin.Query.TermSeperator;
             var result = new Result
             {
                 Title = title,

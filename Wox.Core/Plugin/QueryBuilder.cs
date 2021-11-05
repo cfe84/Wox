@@ -10,7 +10,7 @@ namespace Wox.Core.Plugin
         public static Query Build(string text, Dictionary<string, PluginPair> nonGlobalPlugins)
         {
             // replace multiple white spaces with one white space
-            var terms = text.Split(new[] { Query.TermSeperater }, StringSplitOptions.RemoveEmptyEntries);
+            var terms = text.Split(new[] { Query.TermSeperator }, StringSplitOptions.RemoveEmptyEntries);
             if (terms.Length == 0)
             { // nothing was typed
                 return null;
